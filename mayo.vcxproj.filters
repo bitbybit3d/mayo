@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ais_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application_item_selection_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\base_runner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\base_runner_signals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bnd_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\brep_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button_flat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\caf_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_about.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_export_options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_inspect_xde.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_save_image_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog_task_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\document.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\document_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpx_document_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpx_document_item_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpx_mesh_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpx_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gpx_xde_document_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui_application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui_document.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui_document_list_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\item_view_buttons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\item_view_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mesh_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mesh_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\occt_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\progress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property_builtins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property_enumeration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\proxy_styled_item_delegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qt_occ_view_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\occtools\qt_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quantity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\qwidget_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\result.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\theme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\v3d_view_camera_animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_application_tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_clip_planes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_file_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_gui_document.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_message_indicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_occ_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_properties_editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget_shape_selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xde_document_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xde_shape_property_owner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ais_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\application.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\application_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\application_item_selection_model.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\base_runner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\3rdparty\fougtools\qttools\task\base_runner_signals.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\bnd_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\brep_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\button_flat.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\caf_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\dialog_about.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog_export_options.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog_inspect_xde.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog_options.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog_save_image_view.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog_task_manager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\document.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\document_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpx_document_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpx_document_item_factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpx_mesh_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpx_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gpx_xde_document_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\gui_application.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\gui_document.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\gui_document_list_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\3rdparty\fougtools\qttools\gui\item_view_buttons.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\item_view_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\3rdparty\fougtools\qttools\task\manager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\math_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mesh_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mesh_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\occt_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\occtools\occtools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\options.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\progress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\property.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\property_builtins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property_enumeration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\proxy_styled_item_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\core\qstring_hfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\qt_occ_view_controller.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\occtools\qt_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\quantity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\qwidget_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_current_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_qthread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_qthreadpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_stdasync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\span.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\string_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\theme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\v3d_view_camera_animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\widget_application_tree.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget_clip_planes.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget_file_system.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget_gui_document.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget_message_indicator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget_occ_view.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\widget_properties_editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\widget_shape_selector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\xde_document_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\xde_shape_property_owner.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="ui_dialog_about.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog_export_options.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog_inspect_xde.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog_options.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog_save_image_view.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog_task_manager.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_widget_application_tree.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_widget_clip_planes.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_widget_properties_editor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\dialog_about.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog_export_options.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog_inspect_xde.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog_options.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog_save_image_view.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog_task_manager.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\widget_application_tree.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\widget_clip_planes.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\widget_properties_editor.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\appicon_128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\appicon_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\appicon_24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\appicon_32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\appicon_64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\back-square.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\back-square.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\back.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\back.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\camera.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\camera.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\clip-plane.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\clip-plane.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\cross.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\cross.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\edit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\edit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\expand.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\expand.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\export.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\export.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\file.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\file.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\gear.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\gear.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\import.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\import.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\indicator-down-disabled_8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\indicator-down-disabled_8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\indicator-down_8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\indicator-down_8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\item-mesh.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\item-mesh.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\item-xde.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\item-xde.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\left-sidebar.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\left-sidebar.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\link.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\link.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="mayo.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\themes\classic\next.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\next.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\stop.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\stop.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-back.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-back.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-front.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-front.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-iso.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-iso.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\view-top.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\view-top.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\widget_pseudo_fold.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\xde-assembly.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\xde-assembly.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\xde-simple-shape.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\xde-simple-shape.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\xde_reference_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\zoom-in.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\zoom-in.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\classic\zoom-out.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\themes\dark\zoom-out.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\mayo_resource.rc" />
+  </ItemGroup>
+</Project>

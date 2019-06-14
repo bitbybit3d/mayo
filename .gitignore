@@ -1,0 +1,8 @@
+# file types to ignore
+
+*.vcxproj.user
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
+/.vs/
+Debug/

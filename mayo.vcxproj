@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{513C921E-4029-3885-A044-5B3EC916444C}</ProjectGuid>
+    <RootNamespace>mayo</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>mayo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>mayo</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mayo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mayo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;src;src\3rdparty;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(CASROOT)\inc;release;\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding /std:c++17 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;OCCT_HANDLE_NOCAST;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4150;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;TKernel.lib;TKMath.lib;TKTopAlgo.lib;TKV3d.lib;TKOpenGl.lib;TKService.lib;TKG2d.lib;TKBRep.lib;TKSTL.lib;TKXSBase.lib;TKIGES.lib;TKSTEP.lib;TKXDESTEP.lib;TKXDEIGES.lib;TKMeshVS.lib;TKXSDRAW.lib;TKLCAF.lib;TKXCAF.lib;TKCAF.lib;TKG3d.lib;TKGeomBase.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(CASROOT)\win32\vc14\libd;C:\Utils\my_sql\my_sqlx86\lib;C:\Utils\postgresqlx86\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\mayo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>0.1</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;OCCT_HANDLE_NOCAST;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <OutputFile>$(Configuration)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;_UNICODE;$(Platform);OCCT_HANDLE_NOCAST;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;src;src\3rdparty;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(CASROOT)\inc;release;\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>mayo</InitFuncName>
+      <OutputFile>$(Configuration)\qrc_%(Filename).cpp</OutputFile>
+      <InputFile>%(FullPath)</InputFile>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+    </QtRcc>
+    <QtUic>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;src;src\3rdparty;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(CASROOT)\inc;debug;\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding /std:c++17 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;OCCT_HANDLE_NOCAST;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4150;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>TKernel.lib;TKMath.lib;TKTopAlgo.lib;TKV3d.lib;TKOpenGl.lib;TKService.lib;TKG2d.lib;TKBRep.lib;TKSTL.lib;TKXSBase.lib;TKIGES.lib;TKSTEP.lib;TKXDESTEP.lib;TKXDEIGES.lib;TKMeshVS.lib;TKXSDRAW.lib;TKLCAF.lib;TKXCAF.lib;TKCAF.lib;TKG3d.lib;TKGeomBase.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(CASROOT)\win32\vc14\libd;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\mayo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>0.1</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;_UNICODE;WIN32;OCCT_HANDLE_NOCAST;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <OutputFile>$(Configuration)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;_UNICODE;$(Platform);OCCT_HANDLE_NOCAST;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;src;src\3rdparty;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(CASROOT)\inc;debug;\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <OutputFile>$(Configuration)\qrc_%(Filename).cpp</OutputFile>
+      <InputFile>%(FullPath)</InputFile>
+      <InitFuncName>mayo</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+    </QtRcc>
+    <QtUic>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ais_text.cpp" />
+    <ClCompile Include="src\application.cpp" />
+    <ClCompile Include="src\application_item.cpp" />
+    <ClCompile Include="src\application_item_selection_model.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\base_runner.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\base_runner_signals.cpp" />
+    <ClCompile Include="src\bnd_utils.cpp" />
+    <ClCompile Include="src\brep_utils.cpp" />
+    <ClCompile Include="src\button_flat.cpp" />
+    <ClCompile Include="src\caf_utils.cpp" />
+    <ClCompile Include="src\dialog_about.cpp" />
+    <ClCompile Include="src\dialog_export_options.cpp" />
+    <ClCompile Include="src\dialog_inspect_xde.cpp" />
+    <ClCompile Include="src\dialog_options.cpp" />
+    <ClCompile Include="src\dialog_save_image_view.cpp" />
+    <ClCompile Include="src\dialog_task_manager.cpp" />
+    <ClCompile Include="src\document.cpp" />
+    <ClCompile Include="src\document_item.cpp" />
+    <ClCompile Include="src\gpx_document_item.cpp" />
+    <ClCompile Include="src\gpx_document_item_factory.cpp" />
+    <ClCompile Include="src\gpx_mesh_item.cpp" />
+    <ClCompile Include="src\gpx_utils.cpp" />
+    <ClCompile Include="src\gpx_xde_document_item.cpp" />
+    <ClCompile Include="src\gui_application.cpp" />
+    <ClCompile Include="src\gui_document.cpp" />
+    <ClCompile Include="src\gui_document_list_model.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\item_view_buttons.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\item_view_utils.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mainwindow.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\manager.cpp" />
+    <ClCompile Include="src\math_utils.cpp" />
+    <ClCompile Include="src\mesh_item.cpp" />
+    <ClCompile Include="src\mesh_utils.cpp" />
+    <ClCompile Include="src\occt_window.cpp" />
+    <ClCompile Include="src\options.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\task\progress.cpp" />
+    <ClCompile Include="src\property.cpp" />
+    <ClCompile Include="src\property_builtins.cpp" />
+    <ClCompile Include="src\property_enumeration.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\proxy_styled_item_delegate.cpp" />
+    <ClCompile Include="src\qt_occ_view_controller.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\occtools\qt_utils.cpp" />
+    <ClCompile Include="src\quantity.cpp" />
+    <ClCompile Include="src\3rdparty\fougtools\qttools\gui\qwidget_utils.cpp" />
+    <ClCompile Include="src\result.cpp" />
+    <ClCompile Include="src\string_utils.cpp" />
+    <ClCompile Include="src\theme.cpp" />
+    <ClCompile Include="src\unit.cpp" />
+    <ClCompile Include="src\unit_system.cpp" />
+    <ClCompile Include="src\v3d_view_camera_animation.cpp" />
+    <ClCompile Include="src\widget_application_tree.cpp" />
+    <ClCompile Include="src\widget_clip_planes.cpp" />
+    <ClCompile Include="src\widget_file_system.cpp" />
+    <ClCompile Include="src\widget_gui_document.cpp" />
+    <ClCompile Include="src\widget_message_indicator.cpp" />
+    <ClCompile Include="src\widget_occ_view.cpp" />
+    <ClCompile Include="src\widget_properties_editor.cpp" />
+    <ClCompile Include="src\widget_shape_selector.cpp" />
+    <ClCompile Include="src\xde_document_item.cpp" />
+    <ClCompile Include="src\xde_shape_property_owner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ais_text.h" />
+    <QtMoc Include="src\application.h">
+    </QtMoc>
+    <ClInclude Include="src\application_item.h" />
+    <QtMoc Include="src\application_item_selection_model.h">
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\base_runner.h" />
+    <QtMoc Include="src\3rdparty\fougtools\qttools\task\base_runner_signals.h">
+    </QtMoc>
+    <ClInclude Include="src\bnd_utils.h" />
+    <ClInclude Include="src\brep_utils.h" />
+    <QtMoc Include="src\button_flat.h">
+    </QtMoc>
+    <ClInclude Include="src\caf_utils.h" />
+    <QtMoc Include="src\dialog_about.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog_export_options.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog_inspect_xde.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog_options.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog_save_image_view.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog_task_manager.h">
+    </QtMoc>
+    <QtMoc Include="src\document.h">
+    </QtMoc>
+    <ClInclude Include="src\document_item.h" />
+    <ClInclude Include="src\gpx_document_item.h" />
+    <ClInclude Include="src\gpx_document_item_factory.h" />
+    <ClInclude Include="src\gpx_mesh_item.h" />
+    <ClInclude Include="src\gpx_utils.h" />
+    <ClInclude Include="src\gpx_xde_document_item.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\gui.h" />
+    <QtMoc Include="src\gui_application.h">
+    </QtMoc>
+    <QtMoc Include="src\gui_document.h">
+    </QtMoc>
+    <ClInclude Include="src\gui_document_list_model.h" />
+    <QtMoc Include="src\3rdparty\fougtools\qttools\gui\item_view_buttons.h">
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\item_view_utils.h" />
+    <ClInclude Include="src\libtree.h" />
+    <QtMoc Include="src\mainwindow.h">
+    </QtMoc>
+    <QtMoc Include="src\3rdparty\fougtools\qttools\task\manager.h">
+    </QtMoc>
+    <ClInclude Include="src\math_utils.h" />
+    <ClInclude Include="src\mesh_item.h" />
+    <ClInclude Include="src\mesh_utils.h" />
+    <ClInclude Include="src\occt_window.h" />
+    <ClInclude Include="src\3rdparty\fougtools\occtools\occtools.h" />
+    <QtMoc Include="src\options.h">
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\progress.h" />
+    <QtMoc Include="src\property.h">
+    </QtMoc>
+    <ClInclude Include="src\property_builtins.h" />
+    <ClInclude Include="src\property_enumeration.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\proxy_styled_item_delegate.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\core\qstring_hfunc.h" />
+    <QtMoc Include="src\qt_occ_view_controller.h">
+    </QtMoc>
+    <ClInclude Include="src\3rdparty\fougtools\occtools\qt_utils.h" />
+    <ClInclude Include="src\quantity.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\gui\qwidget_utils.h" />
+    <ClInclude Include="src\result.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_current_thread.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_qthread.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_qthreadpool.h" />
+    <ClInclude Include="src\3rdparty\fougtools\qttools\task\runner_stdasync.h" />
+    <ClInclude Include="src\span.h" />
+    <ClInclude Include="src\string_utils.h" />
+    <ClInclude Include="src\theme.h" />
+    <ClInclude Include="src\unit.h" />
+    <ClInclude Include="src\unit_system.h" />
+    <ClInclude Include="src\v3d_view_camera_animation.h" />
+    <QtMoc Include="src\widget_application_tree.h">
+    </QtMoc>
+    <QtMoc Include="src\widget_clip_planes.h">
+    </QtMoc>
+    <QtMoc Include="src\widget_file_system.h">
+    </QtMoc>
+    <QtMoc Include="src\widget_gui_document.h">
+    </QtMoc>
+    <QtMoc Include="src\widget_message_indicator.h">
+    </QtMoc>
+    <QtMoc Include="src\widget_occ_view.h">
+    </QtMoc>
+    <ClInclude Include="src\widget_properties_editor.h" />
+    <QtMoc Include="src\widget_shape_selector.h">
+    </QtMoc>
+    <ClInclude Include="src\xde_document_item.h" />
+    <QtMoc Include="src\xde_shape_property_owner.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding /we4150 /std:c++17 -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding /we4150 /std:c++17 -O2 -MD /Zi -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="ui_dialog_about.h" />
+    <ClInclude Include="ui_dialog_export_options.h" />
+    <ClInclude Include="ui_dialog_inspect_xde.h" />
+    <ClInclude Include="ui_dialog_options.h" />
+    <ClInclude Include="ui_dialog_save_image_view.h" />
+    <ClInclude Include="ui_dialog_task_manager.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_widget_application_tree.h" />
+    <ClInclude Include="ui_widget_clip_planes.h" />
+    <ClInclude Include="ui_widget_properties_editor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\dialog_about.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_about.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_about.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\dialog_export_options.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_export_options.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_export_options.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\dialog_inspect_xde.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_inspect_xde.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_inspect_xde.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\dialog_options.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_options.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_options.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\dialog_save_image_view.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_save_image_view.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_save_image_view.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\dialog_task_manager.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_dialog_task_manager.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_dialog_task_manager.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\mainwindow.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_mainwindow.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_mainwindow.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\widget_application_tree.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_widget_application_tree.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_widget_application_tree.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\widget_clip_planes.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_widget_clip_planes.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_widget_clip_planes.h</OutputFile>
+    </QtUic>
+    <QtUic Include="src\widget_properties_editor.ui">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_widget_properties_editor.h</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_widget_properties_editor.h</OutputFile>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\appicon_128.png" />
+    <None Include="images\appicon_16.png" />
+    <None Include="images\appicon_24.png" />
+    <None Include="images\appicon_32.png" />
+    <None Include="images\appicon_64.png" />
+    <None Include="images\themes\classic\back-square.svg" />
+    <None Include="images\themes\dark\back-square.svg" />
+    <None Include="images\themes\classic\back.svg" />
+    <None Include="images\themes\dark\back.svg" />
+    <None Include="images\themes\classic\camera.svg" />
+    <None Include="images\themes\dark\camera.svg" />
+    <None Include="images\themes\classic\clip-plane.svg" />
+    <None Include="images\themes\dark\clip-plane.svg" />
+    <None Include="images\themes\classic\cross.svg" />
+    <None Include="images\themes\dark\cross.svg" />
+    <None Include="images\themes\classic\edit.svg" />
+    <None Include="images\themes\dark\edit.svg" />
+    <None Include="images\themes\classic\expand.svg" />
+    <None Include="images\themes\dark\expand.svg" />
+    <None Include="images\themes\classic\export.svg" />
+    <None Include="images\themes\dark\export.svg" />
+    <None Include="images\themes\classic\file.svg" />
+    <None Include="images\themes\dark\file.svg" />
+    <None Include="images\themes\classic\gear.svg" />
+    <None Include="images\themes\dark\gear.svg" />
+    <None Include="images\themes\classic\import.svg" />
+    <None Include="images\themes\dark\import.svg" />
+    <None Include="images\themes\classic\indicator-down-disabled_8.png" />
+    <None Include="images\themes\dark\indicator-down-disabled_8.png" />
+    <None Include="images\themes\classic\indicator-down_8.png" />
+    <None Include="images\themes\dark\indicator-down_8.png" />
+    <None Include="images\themes\classic\item-mesh.svg" />
+    <None Include="images\themes\dark\item-mesh.svg" />
+    <None Include="images\themes\classic\item-xde.svg" />
+    <None Include="images\themes\dark\item-xde.svg" />
+    <None Include="images\themes\classic\left-sidebar.svg" />
+    <None Include="images\themes\dark\left-sidebar.svg" />
+    <None Include="images\themes\classic\link.svg" />
+    <None Include="images\themes\dark\link.svg" />
+    <QtRcc Include="mayo.qrc">
+    </QtRcc>
+    <None Include="images\themes\classic\next.svg" />
+    <None Include="images\themes\dark\next.svg" />
+    <None Include="images\themes\classic\stop.svg" />
+    <None Include="images\themes\dark\stop.svg" />
+    <None Include="images\themes\classic\view-back.svg" />
+    <None Include="images\themes\dark\view-back.svg" />
+    <None Include="images\themes\classic\view-bottom.svg" />
+    <None Include="images\themes\dark\view-bottom.svg" />
+    <None Include="images\themes\classic\view-front.svg" />
+    <None Include="images\themes\dark\view-front.svg" />
+    <None Include="images\themes\classic\view-iso.svg" />
+    <None Include="images\themes\dark\view-iso.svg" />
+    <None Include="images\themes\classic\view-left.svg" />
+    <None Include="images\themes\dark\view-left.svg" />
+    <None Include="images\themes\classic\view-right.svg" />
+    <None Include="images\themes\dark\view-right.svg" />
+    <None Include="images\themes\classic\view-top.svg" />
+    <None Include="images\themes\dark\view-top.svg" />
+    <None Include="images\widget_pseudo_fold.png" />
+    <None Include="images\themes\classic\xde-assembly.svg" />
+    <None Include="images\themes\dark\xde-assembly.svg" />
+    <None Include="images\themes\classic\xde-simple-shape.svg" />
+    <None Include="images\themes\dark\xde-simple-shape.svg" />
+    <None Include="images\xde_reference_16.png" />
+    <None Include="images\themes\classic\zoom-in.svg" />
+    <None Include="images\themes\dark\zoom-in.svg" />
+    <None Include="images\themes\classic\zoom-out.svg" />
+    <None Include="images\themes\dark\zoom-out.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\mayo_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="Qt5.10.1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
