@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"G:\\sources\\from_github\\mayo\\mayo\\images\\appicon.ico"
+IDI_ICON1	ICON	DISCARDABLE	"images\\appicon.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,1,0,228

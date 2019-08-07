@@ -1,5 +1,5 @@
 
-set QTDIR=C:\Qt\Qt5.10.1\5.10.1\msvc2015
+set QTDIR=C:\Qt\Qt5.12.2\5.12.2\msvc2017
 
 set CASROOT=%~d0\sources\contrib\opencascade\opencascade-7.3.0
 
